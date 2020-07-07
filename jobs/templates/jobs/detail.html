@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 {% load static %}
@@ -82,38 +84,14 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1>Yuxiang Chen</h1>
-          <p class="lead text-muted">Hi my name is Yuxiang, I enjoy making apps and websites.</p>
+          <h1>Job Detail</h1>
+          <p class="lead text-muted">{{ job.summary }}</p>
+          <img src="{{ job.image.url }}" height=300></img>
           <p>
-            <a href="mailto:chenyx.eric2013@gmail.com" class="btn btn-primary my-2">Email Me</a>
-            <a href="https://github.com/chenyyxx" class="btn btn-secondary my-2">Go to my github</a>
-            <a href="https://www.linkedin.com/in/yuxiang-chen-1204/" class="btn btn-secondary my-2">Go to my Linkedin</a>
+            <a href="{% url 'home'%}" class="btn btn-primary my-2">Back</a>
           </p>
-          <img src="{% static 'IMG_2691.jpeg' %}" height=300></img>
         </div>
       </section>
-
-      <div class="album py-5 bg-light">
-        <div class="container">
-
-          <div class="row">
-            {% for job in jobs.all %}
-            <div class="col-md-4">
-              <a href="{% url 'detail' job.id%}">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-image-top" src="{{ job.image.url }}", height=250>
-                <div class="card-body">
-                  <p class="card-text">{{ job.summary }}</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
-                </div>
-              </div>
-              </a>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
 
     </main>
 
