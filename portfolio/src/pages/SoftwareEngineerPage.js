@@ -32,7 +32,7 @@ export default class SoftwareEngineerPage extends Component {
     render() {
         return (
             <div className="position-relative">
-                <Navbar className="pl-5 pr-5 sde_header" fixed="top">
+                <Navbar className="pl-5 pr-5 sde_header" fixed="top" variant="">
                     <Navbar.Collapse className="align-items-end">
                         <div className="box"></div>
                         <a href="/" className="custom_link my_name">Yuxiang Chen</a>
@@ -43,7 +43,7 @@ export default class SoftwareEngineerPage extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto" defaultActiveKey="/software_engineer/about">
                             <Nav.Link href="/software_engineer/about">ABOUT ME</Nav.Link>
-                            <Nav.Link href="/software_enginee/experience">EXPERIENCE</Nav.Link>
+                            <Nav.Link className="custom_link" href="/software_enginee/experience">EXPERIENCE</Nav.Link>
                             <Nav.Link href="/software_enginee/projects">PROJECTS</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

@@ -21,6 +21,17 @@
     color: black;
 }
 
+.nav-link:link {
+    color: black;
+}
+.nav-link.active {
+    color: rgba(0, 80, 255, 1) !important;
+}
+
+.nav-link:hover {
+    color: rgba(0, 80, 255, 1);
+}
+
 .my_name{
     text-align: center;
     font-weight: bold;
