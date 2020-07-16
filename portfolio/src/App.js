@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import HomePage from './pages/HomePage';
+import SoftwareEngineerPage from './pages/SoftwareEngineerPage';
 
 class App extends React.Component {
   constructor(props){
@@ -25,10 +26,10 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route exact path="/" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-          {/* <Route exact path="/data_scientist" component={DataScientistPage} />
+          {/* <Route exact path="/data_scientist" component={DataScientistPage} /> */}
           <Route exact path='/software_engineer' component={SoftwareEngineerPage} />
-          <Route exact path="/mobile" component={Mobile}/>
-          <Route component={NotFoundPage} /> */}
+          {/* <Route exact path="/mobile" component={Mobile}/> */}
+          {/* <Route component={NotFoundPage} /> */}
         </Switch>
       </Router>
     );
