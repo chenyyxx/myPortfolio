@@ -23,7 +23,7 @@ export default class Menu extends Component {
                     id: 1,
                     title: 'Software Engineering',
                     imgSrc: events,
-                    link: 'http://localhost:3000/software_engineer',
+                    link: 'http://localhost:3000/software_engineer/about',
                     selected: false
                 },
                 {

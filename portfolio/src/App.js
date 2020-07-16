@@ -27,7 +27,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           {/* <Route exact path="/data_scientist" component={DataScientistPage} /> */}
-          <Route exact path='/software_engineer' component={SoftwareEngineerPage} />
+          <Route exact path='/software_engineer/about' component={SoftwareEngineerPage} />
           {/* <Route exact path="/mobile" component={Mobile}/> */}
           {/* <Route component={NotFoundPage} /> */}
         </Switch>
