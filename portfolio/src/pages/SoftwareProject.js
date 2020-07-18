@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class DataScientistPage extends Component {
+export default class SoftwareProject extends Component {
     render() {
         return (
             <div>
-                Data Scientist Page
+                Software Project Page
             </div>
         )
     }
