@@ -1,53 +1,28 @@
 import React, { Component } from 'react'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image'
-import { useHistory } from 'react-router-dom';
 
 import MyPic from '../assets/images/MyPic.jpeg';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedinIn, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import IconBar from '../components/IconBar';
 
 export default class SoftwareEngineerPage extends Component {
-    toGithub=()=> {
-        window.open("https://github.com/chenyyxx");
-    }
-    toLinkedin=()=> {
-        window.open("https://www.linkedin.com/in/yuxiang-chen-1204/");
-    }
-    toFacebook=()=> {
-        window.open("https://www.facebook.com/profile.php?id=100006959746248");
-    }
-    toEmail=()=> {
-        window.open();
+    constructor(props){
+        super(props);
+        this.state = {
+            link: "/software_engineer/about",
+        }
     }
     
     render() {
         return (
             <div className="position-relative">
-                <Navbar className="pl-5 pr-5 sde_header" fixed="top" variant="">
-                    <Navbar.Collapse className="align-items-end">
-                        <div className="box"></div>
-                        <a href="/" className="custom_link my_name">Yuxiang Chen</a>
-                        <a className="custom_link my_position">/</a>
-                        <a className="custom_link my_position">SOFTWARE ENGINEER</a>
-                    </Navbar.Collapse>
-                    
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ml-auto" defaultActiveKey="/software_engineer/about">
-                            <Nav.Link href="/software_engineer/about">ABOUT ME</Nav.Link>
-                            <Nav.Link className="custom_link" href="/software_enginee/experience">EXPERIENCE</Nav.Link>
-                            <Nav.Link href="/software_enginee/projects">PROJECTS</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
+                <Header link={this.state.link} />
                 <div>
                     <div className="info_card">
                         <Container className="info_main d-flex justify-content-center">
@@ -63,12 +38,7 @@ export default class SoftwareEngineerPage extends Component {
                                 </Col>
                             </Row>
                         </Container>
-                        <div className="info_bar">
-                            <FontAwesomeIcon icon={faGithub} size="lg" onClick={this.toGithub}/>
-                            <FontAwesomeIcon icon={faLinkedinIn} size="lg" onClick={this.toLinkedin}/>
-                            <FontAwesomeIcon icon={faFacebook} size="lg" onClick={this.toFacebook}/>
-                            <FontAwesomeIcon icon={faEnvelope} size="lg" onClick={this.toEmail}/>
-                        </div>
+                        <IconBar style="info_bar" size="lg" />
                     </div>
                     <div className="d-flex">
                         <div className="leftCol"></div>
@@ -92,25 +62,7 @@ export default class SoftwareEngineerPage extends Component {
                         </div>
                     </div>
                 </div>
-                <Navbar className="pl-5 pr-5 sde_footer" >
-                    <Navbar.Collapse className="align-items-end">
-                        <p className="text-center mb-0">Created by Yuxiang Chen @ 2020.</p>
-                    </Navbar.Collapse>
-                    
-                    <Navbar.Collapse id="basic-navbar-nav" className="d-flex justify-content-end mr-4">
-                        <div className="footer_contact">
-                            <p className="font-weight-bolder text-center mb-3"> Follow </p> 
-                            <div className="footer_icon_bar">
-                                <FontAwesomeIcon icon={faGithub} size="md" onClick={this.toGithub}/>
-                                <FontAwesomeIcon icon={faLinkedinIn} size="md" onClick={this.toLinkedin}/>
-                                <FontAwesomeIcon icon={faFacebook} size="md" onClick={this.toFacebook}/>
-                                <FontAwesomeIcon icon={faEnvelope} size="md" onClick={this.toEmail}/>
-                            </div>   
-                        </div>
-                        
-                    </Navbar.Collapse>
-                </Navbar>
-                
+                <Footer github={this.openUrl}/>         
             </div>
         )
     }
