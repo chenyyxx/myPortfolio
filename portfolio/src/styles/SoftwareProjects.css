@@ -106,9 +106,37 @@
     text-align: center;
     text-justify: auto;
 }
+.detail-title {
+    position: relative;
+    z-index: 15;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: black;
+    text-justify: auto;
+}
 
 
 .detail-text{
     position: absolute;
     top: 20%;
+}
+
+
+
+
+ul{
+    padding-left:40px;
+    padding-right: 20px;
+    list-style-type: none !important;
+}
+
+ul li::before {
+    content: "\25A0";
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block; 
+    width: 2em;
+    margin-left: -2em;
 }
