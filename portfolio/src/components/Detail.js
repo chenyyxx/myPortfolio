@@ -4,26 +4,7 @@ import {Container,  Row, Col } from 'react-bootstrap'
 
 
 export default class Detail extends Component {
-    state ={
-        details: [
-            {
-                description : "5 Developed an web application and a backend system that analyze the sentiments of tweets in real time utilizingReacton front end,Spring Bootonback end andSparkfor data streaming and NLP processing",
 
-            },
-            {
-                description : "Front End:Created a dashboard usingReact, Ant Visualization and Ant Designbacked byTwitter APIto visualize the sentiment score of trendingkeywords, word frequency, and example tweets inreal time",
-
-            },
-            {
-                description : "Service:Streamed data fromTwitter APIwithTweepyand analyzed the sentiments of tweets withNLPtoolVADERunderSpark",
-
-            },
-            {
-                description : "Back End:UsedSpring Bootframework to handle GET requests from front end and PUT requests from Spark withSpring MVCframework",
-
-            },
-        ]
-    }
     makeList = (details) => {
         return details.map(detail => {
             return  <li>
@@ -40,9 +21,9 @@ export default class Detail extends Component {
                 <Container className="detail-text">
                         <Row>
                             <Col>
-                                <h2 className="pl-3 detail-title">TweetsTrend</h2><br/>
+                                <h2 className="pl-3 detail-title">{this.props.slide.title}</h2><br/>
                                 <ul className="detail-list">
-                                    {this.makeList(this.state.details)}
+                                    {this.makeList(this.props.slide.details)}
                                 </ul>
                             </Col>
                         </Row>

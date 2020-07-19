@@ -28,6 +28,7 @@
 .slide-show {
     display: flex;
     flex-direction: column;
+    padding-bottom: 120px;
 }
 
 .slide {
@@ -95,6 +96,7 @@
     font-size: 32px;
     color: white;
     text-align: center;
+    padding-top: 5px;
 }
 .detail-title-text-bold {
     position: relative;

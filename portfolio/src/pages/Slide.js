@@ -3,7 +3,8 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Container from 'react-bootstrap/Container'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedinIn, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 export default function Slide(props){
         return (
@@ -16,18 +17,19 @@ export default function Slide(props){
                             <Card.Body>
                                 <Card.Title>{props.slide.title}</Card.Title>
                                 <Card.Text>
-                                {props.slide.subTitle}
+                                    {props.slide.subTitle}
                                 </Card.Text>
                                 <Card.Text>
-                                {props.slide.description}
+                                    {props.slide.description}
                                 </Card.Text>
-                                <Button variant="primary" href={props.slide.link}>View Detail</Button>
+                                <Button className="mr-3 mb-3" variant="primary" onClick={props.click}>View Detail</Button>
+                                <Button className="mr-3 mb-3" variant="primary" href={props.slide.link}>
+                                    <FontAwesomeIcon className="mr-2" icon={faGithub} size={props.size} />
+                                    Go To Github
+                                </Button>
                             </Card.Body>
                         </Col>
                     </Row>
-                    
-
-                    
                 </Card>
 
         )
