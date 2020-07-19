@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
+import Header from '../components/Header';
+import Footer from '../components/Footer'
+import SlideShows from './SlideShows';
+import Summary from '../components/Summary';
 
-export default class SoftwareProject extends Component {
-    render() {
+
+export default function SoftwareProject(props) {
         return (
             <div>
-                Software Project Page
+                <Header link="/software_engineer/projects" />
+                <div className="main">
+                    <Summary/>
+                </div>
+                <Footer/>
             </div>
         )
-    }
 }

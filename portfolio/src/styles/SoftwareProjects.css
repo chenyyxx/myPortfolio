@@ -1,0 +1,46 @@
+.summary {
+    background-color: white;
+    min-height: 300px;
+}
+
+
+
+.main{
+    margin-top: 126px;
+    background-color: #E6DACE;
+    height: auto;
+    width:100%;
+    min-height:952px;
+}
+
+.title-text {
+    position: relative;
+    z-index: 15;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.title-text-bold{
+    position: relative;
+    z-index: 15;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.square-bar {
+    position: absolute;
+    top: 58px;
+    height: 160px;
+    width: 800px;
+    background-color: #E6DACE;
+    z-index: 10;
+}
+
+.summary-left{
+
+}
+
+.summary-right{
+    
+}
