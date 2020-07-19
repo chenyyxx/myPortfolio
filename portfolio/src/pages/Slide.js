@@ -7,24 +7,28 @@ import Container from 'react-bootstrap/Container'
 
 export default function Slide(props){
         return (
-            <div>
-                <Card border="light" style={{ width: '100%' }}>
+                <Card className="slide">
                     <Row>
                         <Col>
-                            <Card.Img variant="top" src={props.link} />
+                            <Card.Img className="project-image" variant="top" src={props.slide.imgSrc} />
                         </Col>
                         <Col>
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>{props.slide.title}</Card.Title>
                                 <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                                {props.slide.subTitle}
                                 </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Card.Text>
+                                {props.slide.description}
+                                </Card.Text>
+                                <Button variant="primary" href={props.slide.link}>View Detail</Button>
                             </Card.Body>
                         </Col>
                     </Row>
+                    
+
+                    
                 </Card>
-            </div>
+
         )
 }

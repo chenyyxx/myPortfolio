@@ -4,7 +4,7 @@ import IconBar from './IconBar'
 
 export default function Footer() {
     return (
-        <Navbar className="pl-5 pr-5 sde_footer" >
+        <Navbar className="pl-5 pr-5 sde_footer" fixed="bottom" >
             <Navbar.Collapse className="align-items-end">
                 <p className="text-center mb-0">Created by Yuxiang Chen @ 2020.</p>
             </Navbar.Collapse>
