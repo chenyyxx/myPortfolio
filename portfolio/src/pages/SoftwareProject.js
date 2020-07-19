@@ -10,7 +10,8 @@ import Detail from '../components/Detail';
 
 
 
-export default function SoftwareProject(props) {
+export default class SoftwareProject extends Component {
+    render(){
         return (
             <div className="project-page">
                 <Header link="/software_engineer/projects" />
@@ -21,7 +22,8 @@ export default function SoftwareProject(props) {
                     <SlideShows />
                 </div>
                 <Detail />
-                <Footer/>
+                <Footer />
             </div>
         )
+    }
 }

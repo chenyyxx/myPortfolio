@@ -55,8 +55,8 @@ export default class SoftwareEngineerPage extends Component {
                                 </p>
                                 <br/>
                                 <p >
-                                    <Button className="main_button lead font-weight-bolder mr-2" variant="primary">RESUME</Button>
-                                    <Button href="/software_enginner/projects" className="main_button lead font-weight-bolder" variant="outline-primary">PROJECTS</Button>
+                                    <Button href="/software_engineer/experience" className="main_button lead font-weight-bolder mr-2" variant="primary">RESUME</Button>
+                                    <Button href="/software_engineer/projects" className="main_button lead font-weight-bolder" variant="outline-primary">PROJECTS</Button>
                                 </p>
                             </Jumbotron>
                         </div>
