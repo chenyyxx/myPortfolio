@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import Header from '../components/Header';
 import Footer from '../components/Footer'
-import SlideShows from './SlideShows';
+import SlideShows from '../components/SlideShows';
 import Summary from '../components/Summary';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
 import Detail from '../components/Detail';
 
 
