@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedinIn, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faGithub} from '@fortawesome/free-brands-svg-icons'
 
 export default function Slide(props){
         return (

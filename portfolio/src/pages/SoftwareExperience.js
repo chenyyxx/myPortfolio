@@ -8,7 +8,7 @@ import Resume from '../assets/SDE_YuxiangChen_Resume_2_0.pdf';
 import WorkSection from '../components/WorkSection';
 import EduSection from '../components/EduSection';
 import SkillSection from '../components/SkillSection';
-import { Button, Card,Container,Row, Col } from 'react-bootstrap';
+import { Button, Card,Container,Row } from 'react-bootstrap';
 
 
 export default class SoftwareExperience extends Component {
