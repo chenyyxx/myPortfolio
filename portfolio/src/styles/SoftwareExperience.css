@@ -1,0 +1,90 @@
+.resume-main {
+    position: relative;
+    top:126px;
+    bottom:100px;
+}
+
+.resume-title{
+    position: relative;
+}
+
+.resume-summary{
+    position: relative;
+}
+
+.resume-word{
+    position: relative;
+}
+.resume-edu{
+    position: relative;
+}
+.resume-skills{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+
+.experience-super-title{
+    position: relative;
+    top:39px;
+    margin-left:6%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 78px;
+    z-index: 15;
+}
+
+.experience-title  {
+    position: relative;
+    top: 100px;
+    margin-left: 26%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 64px;
+    z-index: 15;
+}
+.experience-title-summary  {
+    position: relative;
+    top: 10px;
+    margin-left: 26%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 64px;
+    z-index: 15;
+}
+
+.experience-title-bold  {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    z-index: 15;
+}
+
+.experience-text  {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 32px;
+    z-index: 15;
+}
+
+.title-bar {
+    position: relative;
+    top: -20px;
+    height: 160px;
+    width: 35%;
+    background-color: #E6DACE;
+    z-index: 10;
+}
+
+.skill-box {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    width: 200px;
+}
+

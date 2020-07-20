@@ -20,7 +20,7 @@ export default class SoftwareProject extends Component {
                 subTitle: 'A Sentiment Analysis project for tweets using Spark, React, Spring Boot',
                 details: [
                     {
-                        description : "5 Developed an web application and a backend system that analyze the sentiments of tweets in real time utilizingReacton front end,Spring Bootonback end andSparkfor data streaming and NLP processing",
+                        description : "Developed an web application and a backend system that analyze the sentiments of tweets in real time utilizingReacton front end,Spring Bootonback end andSparkfor data streaming and NLP processing",
         
                     },
                     {

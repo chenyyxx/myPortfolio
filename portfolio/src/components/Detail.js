@@ -19,15 +19,15 @@ export default class Detail extends Component {
                     <h1 className="detail-title-text">PROJECT <span className="detail-title-text-bold">DETAIL</span></h1>
                 </div>
                 <Container className="detail-text">
-                        <Row>
-                            <Col>
-                                <h2 className="pl-3 detail-title">{this.props.slide.title}</h2><br/>
-                                <ul className="detail-list">
-                                    {this.makeList(this.props.slide.details)}
-                                </ul>
-                            </Col>
-                        </Row>
-                    </Container>
+                    <Row>
+                        <Col>
+                            <h2 className="pl-3 detail-title">{this.props.slide.title}</h2><br/>
+                            <ul className="detail-list">
+                                {this.makeList(this.props.slide.details)}
+                            </ul>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         )
     }
